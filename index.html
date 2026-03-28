@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Jornada Tech - Luciene</title>
+<style>
+/* Estilos e Efeitos Especiais */
+:root {
+--rosa-escuro: #ff00bf2f;
+--rosa-claro: #ea00ffab;
+--rosa-destaque: #d007e2b7;
+}
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        line-height: 1.6; 
+        background: linear-gradient(135deg, var(--rosa-escuro) 0%, var(--rosa-claro) 100%);
+        color: #333; 
+        margin: 0; 
+        padding: 0; 
+        min-height: 100vh;
+    }
+
+    header { 
+        background: rgba(171, 1, 250, 0.9); 
+        color: #fff; 
+        padding: 40px 20px; 
+        text-align: center; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        animation: fadeIn 1s ease-out;
+    }
+
+    header h1 { margin: 0; font-size: 2.8em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+    header p { font-size: 1.3em; margin-top: 10px; opacity: 0.9; }
+
+    .container { 
+        width: 90%; 
+        max-width: 950px; 
+        margin: 40px auto; 
+        display: grid;
+        gap: 30px;
+    }
+
+    .card { 
+        background: #fff; 
+        padding: 30px; 
+        border-radius: 15px; 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+        border-left: 6px solid var(--azul-destaque);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeIn 1s ease-out both;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    h2 { color: var(--azul-destaque); margin-top: 0; font-size: 1.8em; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 12px; }
+    .destaque { color: var(--rosa-escuro); font-weight: bold; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Minha Jornada Tech</h1>
+    <p>De Dom Viçoso (MG) para o universo da tecnologia!</p>
+</header>
+
+<div class="container">
+    
+    <div class="card" style="animation-delay: 0.2s;">
+        <h2>Quem sou eu e como o curso melhorou minha vida</h2>
+        <p>Olá, muito prazer! Sou a Luciene, nascida e criada em Dom Viçoso, Minas Gerais. Este curso de tecnologia tem sido uma verdadeira revolução na minha vida. Antes, o computador parecia um bicho de sete cabeças, mas hoje sinto uma independência incrível e uma confiança renovada. Ver que sou capaz de aprender e dominar ferramentas que antes me assustavam me enche de orgulho. Sinto que minha mente está mais ativa do que nunca, e estou desenrolada demais!</p>
+    </div>
+
+    <div class="card" style="animation-delay: 0.4s;">
+        <h2>O Desafio e a Superação no VSCode</h2>
+        <p>Vou confessar: não foi fácil. Aprender a programar envolve desafios grandes, e o VSCode (Visual Studio Code) foi um dos maiores obstáculos no começo. Era tanta janela, tanta extensão e tantos comandos que eu quase desisti. Mas com paciência e persistência, comecei a entender como ele funciona. Hoje, ele é meu braço direito na hora de escrever código, e olhar para trás e ver que superei essa dificuldade é muito gratificante. Cada erro que corrijo no terminal é uma vitória!</p>
+    </div>
+
+    <div class="card" style="animation-delay: 0.6s;">
+        <h2>Mão na Massa: Hardware e Formatação</h2>
+        <p>Aqui o aprendizado também é bruto e prático! Adoro a parte de colocar a mão na massa com a máquina:</p>
+        <ul>
+            <li><strong>Montagem e Desmontagem:</strong> Já conheço as entranhas do PC! Sei identificar e trocar peças como memórias e processadores, garantindo que o hardware esteja funcionando perfeitamente.</li>
+            <li><strong>Formatação:</strong> Pegar um computador travando e deixar ele tinindo, instalando o Windows do zero, configurando drivers e deixando tudo pronto para o uso é algo que eu amo fazer.</li>
+        </ul>
+    </div>
+
+    <div class="card" style="animation-delay: 0.8s;">
+        <h2>O Mundo dos Códigos (Linguagens que estudei)</h2>
+        <p>E para complementar minhas habilidades, aqui está um resumo das linguagens de programação que comecei a dominar:</p>
+        <ul>
+            <li><span class="destaque">Java:</span> Uma linguagem robusta e poderosa. O lema dela é "escreva uma vez, rode em qualquer lugar", sendo muito usada por grandes corporações.</li>
+            <li><span class="destaque">TypeScript (TYPE):</span> Essencialmente JavaScript com superpoderes! Ela nos força a tipar os dados, o que previne muitos erros e torna o código mais seguro.</li>
+            <li><span class="destaque">C#:</span> Desenvolvida pela Microsoft, é excelente para criar desde aplicações empresariais até jogos complexos com a Unity.</li>
+            <li><span class="destaque">C++:</span> Uma linguagem rápida como um raio. Por conversar muito próximo ao hardware, é fundamental para sistemas operacionais e jogos de alta performance.</li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>
